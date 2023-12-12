@@ -1,0 +1,121 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+#define MAX 4
+int a[MAX];
+int rear=-1, front=-1;
+== NULL?I
+vaidinsertą (int);
+voiddelq();
+ALSE
+mory for the
+O the
+tor queue
+ons.
+void main()
+{
+intchoice,;
+do
+printf("\n1.INSERT\n2.DELETF\n3 DISPLAY\n4.EXIT");
+printf("\nENTER YOUR CHOICE");
+scanf("%d",&choice);
+switch(choice) (
+case 1 printf("ENTER DATA");
+scanf("%d",&x);
+insertq(x),
+break;
+case 2 delq();
+break,
+case 3 displayq(),
+break;
+default:exit(0);
+}
+while(choicel 4);
+voidinsertq(int x)
+if(front==MAX-1)
+front-rear=-1;
+if(rear==MAX-1)
+printf("Queue is full, entered data is not inserted");
+)
+else
+rear++;
+a[rear]=x;
+}
+voiddelq()
+int x;
+if (front rear)
+{
+printf("Queue is empty");
+}
+else
+front++;
+x=a[froEXIT
+printf("Deleted data is %d",a);
+}
+voiddisplayq()
+{
+inti:
+if(front==rear)
+printf("queue is empty");
+else
+{
+for(inti-front+1;i<=rear;i++) printf("\t%d",a[i]),
+}
+}
+OUTPUT:-
+1.INSERT
+2.DELETE
+3.DISPLAY
+4.EXIT
+ENTER YOUR CHOICE:1
+ENTER DATA 20
+1.INSERT
+2.DELETE
+3.DISPLAY
+4.EXIT
+ENTER YOUR CHOICE:1
+ENTER DATA:30
+1.INSERT
+2.DELETE
+3.DISPLAY
+4.EXIT
+ENTER YOUR CHOICE:1
+ENTER DATA.40
+1.INSERT
+2.DELETE
+3.DISPLAY
+4.EXIT
+ENTER YOUR CHOICE 1
+ENTER DATA:10
+1.INSERT
+2.DELETE
+3.DISPLAY
+4.EXIT
+ENTER YOUR CHOICE:1
+ENTER DATA:90
+1.INSERT
+2.DELETE
+3.DISPLAY
+4.EXIT
+ENTER YOUR CHOICE:
+20
+30
+40
+10
+90
+1.INSERT
+2.DELETE
+3.DISPLAY
+4.EXIT
+ENTER YOUR CHOICE:2
+Deleted data is 20
+1.INSERT
+2.DELETE
+3.DISPLAY
+4.EXIT
+ENTER YOUR CHOICE:3
+30
+40
+10
+90
